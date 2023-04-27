@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.cibertec</groupId>
-	<artifactId>empresa</artifactId>
+	<artifactId>DAWI_CL1_CamonesQuiroz_Jennifer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>empresa</name>
-	<description>Empresa</description>	
+	<name>DAWI_CL1_CamonesQuiroz_Jennifer</name>
+	<description>DAWI_CL1_CamonesQuiroz_Jennifer</description>	
 	<properties>
 		<java.version>17</java.version>
 	</properties>

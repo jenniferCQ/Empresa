@@ -1,4 +1,4 @@
-package com.empresa.demo.model;
+package com.CamonesQuirozJ.demo.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -6,31 +6,26 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name="tb_usuario")
-public class Usuario {
+@Table(name="tb_empleado")
+public class Empleado {
+
 	@Id
-	@Column(name="cod")
+	@Column(name="id_empleado")
 	public int codigo;
 	
-	@Column(name="nombre")
+	@Column(name="nom_empleado")
 	public String nombre;
 	
-	@Column(name="apePaterno")
+	@Column(name="ape_empleado")
 	public String apePaterno;
 	
 	@Column(name="apeMaterno")
 	public String apeMaterno;
 	
-	@Column(name="area")
-	public int area;
+	@Column(name="id_area")
+	public int idarea;
 
-	public int getCodigo() {
-		return codigo;
-	}
-
-	public void setCodigo(int codigo) {
-		this.codigo = codigo;
-	}
+	
 
 	public String getNombre() {
 		return nombre;
@@ -54,13 +49,5 @@ public class Usuario {
 
 	public void setApeMaterno(String apeMaterno) {
 		this.apeMaterno = apeMaterno;
-	}
-
-	public int getArea() {
-		return area;
-	}
-
-	public void setArea(int area) {
-		this.area = area;
 	}
 }

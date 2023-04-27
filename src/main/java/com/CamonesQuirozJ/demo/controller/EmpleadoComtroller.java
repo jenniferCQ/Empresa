@@ -1,21 +1,18 @@
-package com.empresa.demo.controller;
+package com.CamonesQuirozJ.demo.controller;
 
-
-import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
-import com.empresa.demo.model.Usuario;
-import com.empresa.demo.repository.IUsuarioRepository;
+import com.CamonesQuirozJ.demo.model.Empleado;
+import com.CamonesQuiroz.demo.repository.IUsuarioRepository;
 
-@Controller
-public class EmpresaController {
-	
+public class EmpleadoComtroller {
+
 	private IUsuarioRepository usuarioRepo;
 
 	@GetMapping("/")
 	public String registrar(Model model) {
-		model.addAttribute("Usuario", new Usuario());
+		model.addAttribute("Empleado", new Empleado());
 		return "Formulario";
 	}
 	
